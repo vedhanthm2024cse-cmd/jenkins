@@ -23,7 +23,7 @@ pipeline {
         stage('Docker Build') {
             steps {
                 echo '===== DOCKER BUILD STAGE ====='
-                sh 'docker build -t jenkins-demo .'
+                sh 'docker build -t jenkins-demo:build-${BUILD_NUMBER} .'
             }
         }
     }
