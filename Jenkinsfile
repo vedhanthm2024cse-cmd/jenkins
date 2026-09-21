@@ -19,5 +19,12 @@ pipeline {
                 sh './test.sh'
             }
         }
+
+        stage('Docker Build') {
+            steps {
+                echo '===== DOCKER BUILD STAGE ====='
+                sh 'docker build -t jenkins-demo .'
+            }
+        }
     }
 }
