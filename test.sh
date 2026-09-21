@@ -3,7 +3,7 @@
 echo "===== Running Tests ====="
 
 # Test 1: Check if app.sh exists
-if [ -f wrong-app.sh ]; then
+if [ -f app.sh ]; then
     echo "TEST 1: app.sh exists - PASS"
 else
     echo "TEST 1: app.sh exists - FAIL"
